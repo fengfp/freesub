@@ -18,15 +18,6 @@ proxies:
     grpc-service-name: content.v1.Feed
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: 94.183.170.135
-  port: 443
-  udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  server: 94.183.170.135
   port: 8443
   udp: true
   type: vless
@@ -34,7 +25,15 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  server: 94.183.170.135
+  port: 443
+  udp: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   server: 95.85.242.166
   port: 443
@@ -47,7 +46,7 @@ proxies:
     public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
     short-id: 15bcc0a77c3cacdf
   servername: ee-root.sworkingvpn.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   server: 95.85.242.160
   port: 443
